@@ -11,6 +11,29 @@ for (let i = 0; i < btns.length; i++) {
     
   let  text = e.target.innerText ;
   
+  if (text==="AC") {
+    
+    display.value = "";
+  }
+  
+  else if (text==="=") {
+    
+    let result = eval(display.value);
+    
+    display.value = result;
+    
+  }
+  
+  
+  else{
+    
+    display.value += text;
+    
+    
+  }
+    
+  
+    
     
   } )
 }
